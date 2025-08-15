@@ -1,1 +1,1 @@
-# aibands-css-positioning-examples
+A basic example of multi-page navigation with HTML.

@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    top: 0;         
+    left: 0;        
+    width: 100%;       
+    z-index: 100;
+}
+
+nav {
+    background-color: darksalmon;
+    padding: 4px 16px;
+    border-radius: 24px;
+}
+
+/* Nav logo anchor (nav > a) */
+header nav > a {
+    display: inline-block;
+    vertical-align: bottom;
+    /*background-color: white;*/
+}
+
+header nav > a img {
+    width: 40px;
+    height: auto;
+}
+
+/* Spacer span */
+header nav > span {
+    display: inline-block;
+    /* parent width - logo width - menu <ul> width - span border - whitespace*/
+    width: calc(100% - 45px - 256px - 2px - 4px);
+}
+
+/* Nav Menu (nav > ul) */
+header nav ul {
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0px;
+}
+
+/* Nav link nav > ul > li > a */
+.navlink:link,
+.navlink:visited {
+    color: rgb(246, 232, 178);
+}
+
+.navlink[href="#"] {
+    color: black;
+}
+
+.navlink:hover {
+    color: rgb(227, 212, 154);
+}
+
+.navlink:active {
+    color: lightskyblue;
+}
+
+main {
+    margin-top: 70px;
+}
+
+main > a img {
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: auto;
+}
+
+.landing {
+    text-align: center;
+    height: 1500px;
+    padding-top: 20px;
+}
+
+.landing img {
+    position: sticky;
+    top: 20px;
+}
+
+.content, .sidenav {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.content {
+    width: 1000px;
+    height: 400px;
+    padding-top: 20px;
+}
+
+.sidenav {
+    width: 440px;
+    height: 400px;
+    background-color: lightskyblue;
+    padding-top: 20px;
+}
+
+.sidenav ul {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: darksalmon;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer > span {
+    width: 80%;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+footer > p {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
