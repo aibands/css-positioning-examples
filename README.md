@@ -1,1 +1,1 @@
-A basic example of multi-page navigation with HTML.
+An example of positioning with CSS.
